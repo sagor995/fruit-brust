@@ -282,13 +282,22 @@
           </div>
         </div>
       </section>
-
+    </header>
+    <main class="container mx-auto">
       <!-- Deals of the day section -->
       <section class="pb-24">
-        <div class="flex justify-between items-center mb-12">
-          <div class="space-y-6">
-            <h3 class="text-5xl font-extrabold">Deal of the day</h3>
-            <p class="text-base font-medium w-2/3 text-stone-500">
+        <div
+          class="flex flex-col gap-5 lg:flex-row justify-between items-center mb-5 lg:mb-12"
+        >
+          <div class="space-y-2 lg:space-y-6">
+            <h3
+              class="text-xl lg:text-5xl font-extrabold text-center lg:text-left"
+            >
+              Deal of the day
+            </h3>
+            <p
+              class="text-sm lg:text-base font-medium w-3/4 lg:w-2/3 mx-auto lg:mx-0 text-stone-500 text-center lg:text-left"
+            >
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical Latin literature from 45 BC, making
               it over 2000 years old.
@@ -297,10 +306,10 @@
           <!-- Counter part -->
           <div>
             <div
-              class="grid grid-flow-col items-center gap-5 text-center auto-cols-max text-base font-medium"
+              class="grid grid-flow-col items-center gap-5 text-center auto-cols-max text-[9px] lg:text-base font-medium"
             >
               <div class="flex flex-col gap-2">
-                <span class="countdown text-5xl font-extrabold">
+                <span class="countdown text-2xl lg:text-5xl font-extrabold">
                   <span style="--value: 29"></span>
                 </span>
                 days
@@ -321,7 +330,7 @@
                 />
               </svg>
               <div class="flex flex-col gap-2">
-                <span class="countdown text-5xl font-extrabold">
+                <span class="countdown text-2xl lg:text-5xl font-extrabold">
                   <span style="--value: 15"></span>
                 </span>
                 hours
@@ -342,7 +351,7 @@
                 />
               </svg>
               <div class="flex flex-col gap-2">
-                <span class="countdown text-5xl font-extrabold">
+                <span class="countdown text-2xl lg:text-5xl font-extrabold">
                   <span style="--value: 25"></span>
                 </span>
                 min
@@ -363,7 +372,7 @@
                 />
               </svg>
               <div class="flex flex-col gap-2">
-                <span class="countdown text-5xl font-extrabold">
+                <span class="countdown text-2xl lg:text-5xl font-extrabold">
                   <span style="--value: 08"></span>
                 </span>
                 sec
@@ -664,7 +673,7 @@
           </div>
         </div>
 
-        <div class="flex justify-center">
+        <div class="flex justify-center mt-6">
           <button
             class="bg-primary-color py-2 lg:py-5 px-4 lg:px-7 lg:mt-12 text-white rounded-lg text-lg font-bold lg:text-xl lg:font-extrabold"
           >
@@ -672,8 +681,7 @@
           </button>
         </div>
       </section>
-    </header>
-    <main class="container mx-auto"></main>
+    </main>
     <footer
       class="footer footer-center p-10 bg-[#121212] text-primary-content space-y-6 lg:space-y-12"
     >
