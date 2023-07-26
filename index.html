@@ -28,6 +28,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "primary-color": "#F85559",
             },
           },
         },
@@ -40,10 +41,95 @@
         font-family: "Lato", sans-serif;
       }
     </style>
+
+    <!-- using font awesome -->
+    <script
+      src="https://kit.fontawesome.com/ed715052f3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="container mx-auto">
-      <nav></nav>
+      <nav>
+        <div
+          class="navbar bg-primary-color text-white rounded-[600px] mt-12 py-9 px-12"
+        >
+          <div class="navbar-start">
+            <ul
+              class="menu menu-horizontal px-1 hidden lg:flex text-lg font-medium"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+            <div class="flex justify-center items-center lg:hidden">
+              <img src="images/logo.png" alt="" />
+              <a class="btn btn-ghost normal-case text-4xl font-bold"
+                >Fruit Burst</a
+              >
+            </div>
+          </div>
+          <div class="navbar-center">
+            <div class="hidden lg:flex justify-center items-center">
+              <img src="images/logo.png" alt="" />
+              <a class="btn btn-ghost normal-case text-4xl font-bold"
+                >Fruit Burst</a
+              >
+            </div>
+          </div>
+          <div class="navbar-end">
+            <div class="form-control hidden lg:block">
+              <!-- <input
+                type="text"
+                placeholder="Search"
+                class="input input-bordered w-32 md:w-auto"
+              /> -->
+              <!--  -->
+
+              <label class="relative">
+                <input
+                  type="text"
+                  placeholder="Search here"
+                  class="input input-bordered w-full max-w-xs rounded-full" />
+                <a class="absolute right-5" href="">
+                  <i
+                    class="fa-solid fa-magnifying-glass"
+                    style="color: #000000"
+                  ></i> </a
+              ></label>
+            </div>
+            <div class="dropdown dropdown-end lg:hidden">
+              <label tabindex="0" class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-40 text-lg text-black font-medium"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <!-- <a class="btn">Button</a> -->
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="container mx-auto"></main>
     <footer></footer>
